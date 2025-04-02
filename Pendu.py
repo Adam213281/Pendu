@@ -2,7 +2,6 @@ import random
 import tkinter as tk
 from tkinter import messagebox
 
-# Liste de mots à deviner
 mots = ["python", "ordinateur", "programmation", "interface", "souris", "clavier"]
 mot_a_trouver = random.choice(mots)
 lettres_trouvees = ["_" for _ in mot_a_trouver]
@@ -30,7 +29,6 @@ def verifier_lettre():
         messagebox.showerror("Perdu...", f"Le mot était : {mot_a_trouver}")
         root.quit()
 
-# Création de l'interface
 root = tk.Tk()
 root.title("Jeu du Pendu")
 
